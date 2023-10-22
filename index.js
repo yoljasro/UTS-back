@@ -17,7 +17,7 @@ app.use(json());
 app.use("/admin", adminRouter);
 
 // mongodb connect
-const uri =  "mongodb+srv://saidaliyevjasur450:yoljasron1221Jas@uts.xjxxbnl.mongodb.net/";
+const uri =  "mongodb://127.0.0.1:27017/UTS";
 async function connect() {
     try {
         await mongoose.connect(uri);
@@ -37,5 +37,5 @@ app.post("/user", createUserController)
 app.get("/user", getUserController)
 
 app.listen(port, () => {
-    console.log(`Example app is listening on port https://localhost:${port}`);
+    console.log(`Example app is listening on port http://localhost:${port}`);
 });
