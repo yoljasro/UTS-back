@@ -27,7 +27,7 @@ const adminBro = new AdminBro({
         }
     ]
 })
-
+  
 // admin panel settings
 const ADMIN = {
     email: process.env.ADMIN_EMAIL || "saidaliyevjasur450@gmail.com",
