@@ -1,8 +1,8 @@
 const User = require("../models/user");
 
-const getUserController = async (req , res)=>{
+const getUserController = async (req, res) => {
     const user = await User.find();
-    res.status(200).json({user})
+    res.status(200).json({ user })
 }
 
 const createUserController = async (req, res) => {
@@ -27,6 +27,6 @@ const createUserController = async (req, res) => {
 }
 
 module.exports = {
-    createUserController , 
+    createUserController,
     getUserController
 }

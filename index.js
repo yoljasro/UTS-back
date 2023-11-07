@@ -17,7 +17,7 @@ app.use(json());
 app.use("/admin", adminRouter);
 
 // mongodb connect
-const uri =  "mongodb://127.0.0.1/UTS";
+const uri =  "mongodb+srv://saidaliyevjasur450:yoljasron1221@uts.xjxxbnl.mongodb.net/";
 async function connect() {
     try {
         await mongoose.connect(uri);
